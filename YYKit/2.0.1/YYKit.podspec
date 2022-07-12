@@ -14,6 +14,8 @@ Pod::Spec.new do |s|
   s.frameworks = 'UIKit', 'CoreFoundation', 'CoreText', 'CoreGraphics', 'CoreImage', 'QuartzCore', 'ImageIO', 'AssetsLibrary', 'Accelerate', 'MobileCoreServices', 'SystemConfiguration'
   s.ios.vendored_frameworks = 'Vendor/WebP.framework'
 
+  s.source_files = 'YYKit/YYKit.h'
+
   s.subspec 'Base' do |ss|
     ss.source_files = 'YYKit/Base/**/*.{h,m}'
   end
@@ -43,8 +45,5 @@ Pod::Spec.new do |s|
     ss.dependency 'YYKit/Image'
   end
 
-
-  s.source_files = 'YYKit/**/*.{h,m}'
-  s.public_header_files = 'YYKit/**/*.{h}'
 
 end
